@@ -59,7 +59,7 @@ header {
     padding-top: 35px;
 }
 
-.passOption input {
+input {
     width: 211px;
     height: 39px;
     
@@ -72,4 +72,7 @@ header {
     background-image: url("dot.svg");
     background-repeat: no-repeat;
     background-position: center;
+    
+    color: #55F991;
+    text-align: center
 }
