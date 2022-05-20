@@ -1,23 +1,30 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <title>Random Password Generator</title>
-    </head>
-    <body>
-        <header>
-            <h1 span class="infoWhite">Generate a<br>
-            <span class="infoGreen">random password</span></h1>
-            <p class="inspireQuote">Never use an insecure password again.</p>
-        </header>
-        <main>
-            <button class="genPass" onclick="renderPass()">Generate passwords</button>
-            <div class="optionContainer">
-                <input type="text" class="passOption">
-                <input type="text" class="passOption">
-                <input type="text" class="passOption">
-                <input type="text" class="passOption">
-            </div>
-        </main>
-        <script src="index.js"></script>
-    </body>
+
+<head>
+	<link rel="stylesheet" href="index.css">
+	<title>Random Password Generator</title>
+</head>
+
+<body>
+	<header>
+		<h1 span class="infoWhite">Generate a<br>
+			<span class="infoGreen">random password</span></h1>
+		<p class="inspireQuote">Never use an insecure password again.</p>
+	</header>
+	<main>
+		<div class="UIcontainer">
+			<button class="genPass" onclick="renderPass()">Generate passwords</button>
+            <p>Length:</p>
+            <input type="number" id="inputLength">
+		</div>
+		<div class="optionContainer">
+			<input type="text" class="passOption">
+			<input type="text" class="passOption">
+			<input type="text" class="passOption">
+			<input type="text" class="passOption">
+		</div>
+	</main>
+	<script src="index.js"></script>
+</body>
+
 </html>

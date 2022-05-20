@@ -1,5 +1,11 @@
 var possibleChars = []
 var passLength = 10
+let lengthEl = document.querySelector("input#inputLength");
+lengthEl.value = 10
+
+lengthEl.addEventListener('change', () => {
+    passLength = lengthEl.value
+});
 
 for (let i = 33; i < 126; i++) {
     possibleChars.push(String.fromCharCode(i))

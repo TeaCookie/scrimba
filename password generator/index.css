@@ -59,7 +59,7 @@ header {
     padding-top: 35px;
 }
 
-input {
+.optionContainer input {
     width: 211px;
     height: 39px;
     
@@ -75,4 +75,40 @@ input {
     
     color: #55F991;
     text-align: center
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.UIcontainer {
+    display: flex; 
+}
+
+.UIcontainer p{
+    color: #D5D4D8;
+    font-size: 16px;
+    
+    height: 100%;
+    
+    padding: 0;
+    margin: 12px 0px 0px 30px ;
+    vertical-align: middle;
+    
+    
+    
+}
+
+.UIcontainer input {
+    width: 40px;
+    height: 29px;
+    color: white;
+    margin-top: 6px;
+    margin-left: 4px;
+    background-color: #10B981;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
 }
