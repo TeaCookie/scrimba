@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1F2937;
+}
+
+header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 118px 52px 0px;
+    padding: 0px;
+    color: white;
+    font-size: 20px;
+}
+
+.infoWhite {
+    color: white;
+    margin: 0px;
+}
+
+.infoGreen {
+    color: #4ADF86;
+}
+
+.inspireQuote {
+    color: #D5D4D8;
+    margin-top: 10px;
+    font-size: 20px;
+}
