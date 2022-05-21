@@ -1,14 +1,16 @@
 var possibleChars = []
 // default value of passLength is 10
 var passLength = 10
-let lengthEl = document.querySelector("input#inputLength");
+var lengthEl = document.querySelector("input#inputLength");
 lengthEl.value = 10
 // change value of passLength based on the event listening on the element
 lengthEl.addEventListener('change', () => {
     if (lengthEl.value < 1) {
         passLength = 1
+        lengthEl.value = 1
     } else if (lengthEl.value > 20) {
         passLength = 20
+        lengthEl.value = 20
     } else {
         passLength = lengthEl.value
     }
@@ -38,20 +40,4 @@ function genPass() {
         password += possibleChars[Math.floor(Math.random() * possibleChars.length)]
     }
     return password
-}
-
-function clipboard() {
-    /* Get the text field */
-    var copyText = document.getElementById("myInput");
-
-    /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-    /* Copy the text inside the text field */
-    navigator.clipboard.writeText(copyText.value);
-
-    /* Alert the copied text */
-    alert("Copied the text: " + copyText.value);
-    
 }
